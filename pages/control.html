@@ -1,0 +1,241 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">전체 운영 현황</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="starter.html">Home</a></li>
+                        <li class="breadcrumb-item active">전체 운영 현황</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main content -->
+    <div class="content">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="card card-primary card-outline card-outline-tabs col-12">
+                    <div class="card-header p-0 border-bottom-0">
+                        <ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="custom-tabs-three-home-tab" data-toggle="pill"
+                                   href="#custom-tabs-three-home" role="tab" aria-controls="custom-tabs-three-home"
+                                   aria-selected="true">스테이션 - 스타트업캠퍼스</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="custom-tabs-three-profile-tab" data-toggle="pill"
+                                   href="#custom-tabs-three-profile" role="tab"
+                                   aria-controls="custom-tabs-three-profile" aria-selected="false">스테이션 - 판교역</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="custom-tabs-three-messages-tab" data-toggle="pill"
+                                   href="#custom-tabs-three-messages" role="tab"
+                                   aria-controls="custom-tabs-three-messages" aria-selected="false">스테이션 - 기업지원허브</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content" id="custom-tabs-three-tabContent">
+                            <div class="tab-pane fade active show" id="custom-tabs-three-home" role="tabpanel"
+                                 aria-labelledby="custom-tabs-three-home-tab">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="card card-primary card-outline">
+                                                    <div class="card-header">
+                                                        <h3 class="card-title">
+                                                            <i class="fas fa-camera"></i>
+                                                            스테이션 영상 #1
+                                                        </h3>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div style="height: 275px"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card card-primary card-outline">
+                                                    <div class="card-header">
+                                                        <h3 class="card-title">
+                                                            <i class="fas fa-camera"></i>
+                                                            스테이션 영상 #2
+                                                        </h3>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div style="height: 275px"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="row">
+                                            <div class="card card-primary card-outline">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">
+                                                        <i class="fas fa-bicycle"></i>
+                                                        입출고 현황
+                                                    </h3>
+                                                </div>
+                                                <div id="gridContainer"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="card card-primary card-outline">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">
+                                                        <i class="fas fa-bicycle"></i>
+                                                        대여현황 - 0
+                                                    </h3>
+                                                </div>
+                                                <div id="gridContainer2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card card-primary card-outline">
+                                    <div class="card-header">
+                                        <h3 class="card-title">
+                                            <i class="fas fa-charging-station"></i>
+                                            보관상태
+                                        </h3>
+                                    </div>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-md-2">
+                                                <div class="info-box">
+                                                    <span class="info-box-icon bg-success elevation-1">01</span>
+                                                    <div class="info-box-content">
+                                                        <span class="info-box-text"></span>
+                                                        <span class="info-box-number">통신양호</span>
+                                                        <img src="resources/icon_io/icon_공용자전거_입고.jpg" alt="h">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-sm-6 col-md-2">
+                                                <div class="info-box">
+                                                    <span class="info-box-icon bg-success elevation-1">02</span>
+
+                                                    <div class="info-box-content">
+                                                        <span class="info-box-text"></span>
+                                                        <span class="info-box-number">통신양호</span>
+                                                        <img src="resources/icon_io/icon_공용자전거_입고.jpg">
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-12 col-sm-6 col-md-2">
+                                                <div class="info-box mb-3">
+                                                    <span class="info-box-icon bg-success elevation-1">03</span>
+                                                    <div class="info-box-content">
+                                                        <span class="info-box-text"></span>
+                                                        <span class="info-box-number">통신양호</span>
+                                                        <img src="resources/icon_io/icon_공용자전거_입고.jpg">
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+
+                                            <!-- fix for small devices only -->
+                                            <div class="clearfix hidden-md-up"></div>
+
+                                            <div class="col-12 col-sm-6 col-md-2">
+                                                <div class="info-box mb-3">
+                                                    <span class="info-box-icon bg-success elevation-1">04</span>
+                                                    <div class="info-box-content">
+                                                        <span class="info-box-text"></span>
+                                                        <span class="info-box-number">통신양호</span>
+                                                        <img src="resources/icon_io/icon_공용자전거_입고.jpg">
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-12 col-sm-6 col-md-2">
+                                                <div class="info-box mb-3">
+                                                    <span class="info-box-icon bg-success elevation-1">05</span>
+                                                    <div class="info-box-content">
+                                                        <span class="info-box-text"></span>
+                                                        <span class="info-box-number">통신양호</span>
+                                                        <img src="resources/icon_io/icon_공용자전거_입고.jpg">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-12 col-sm-6 col-md-2">
+                                                <div class="info-box mb-3">
+                                                    <span class="info-box-icon bg-warning elevation-1">06</span>
+                                                    <div class="info-box-content">
+                                                        <span class="info-box-text"></span>
+                                                        <span class="info-box-number">통신이상</span>
+                                                        <img src="resources/icon_io/icon_공용자전거_폐쇄.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-12">
+
+                                        <div class="card card-primary card-outline">
+                                            <div class="card-header">
+                                                <h3 class="card-title">
+                                                    <i class="fas fa-bicycle"></i>
+                                                    전체 스테이션 현황
+                                                </h3>
+                                            </div>
+                                            <div id="gridContainer3"></div>
+                                        </div>
+
+                                        <div class="card card-primary card-outline">
+                                            <div class="card-header">
+                                                <h3 class="card-title">
+                                                    <i class="fas fa-bicycle"></i>
+                                                    이벤트
+                                                </h3>
+                                            </div>
+                                            <div id="gridContainer4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="custom-tabs-three-profile" role="tabpanel"
+                                 aria-labelledby="custom-tabs-three-profile-tab">
+                            </div>
+                            <div class="tab-pane fade" id="custom-tabs-three-messages" role="tabpanel"
+                                 aria-labelledby="custom-tabs-three-messages-tab">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="control.js"></script>
+</div>
+
+

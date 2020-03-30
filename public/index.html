@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!--  font awesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.0.2/css/adminlte.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBn-IuwPO6-dEhqB76u0VPZdJN1tZr3CYk",
+        authDomain: "electron-admin-hwang.firebaseapp.com",
+        databaseURL: "https://electron-admin-hwang.firebaseio.com",
+        projectId: "electron-admin-hwang",
+        storageBucket: "electron-admin-hwang.appspot.com",
+        messagingSenderId: "974000776836",
+        appId: "1:974000776836:web:148fd99efa15292da644d1",
+        measurementId: "G-XDEB2YW10X"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
+  </head>
+  <body>
+    <div class="card card-info">
+      <div class="card-header">
+        <h3 class="card-title">This is for Administrator!</h3><br>
+        <h6 class="card-title">Input Email & Password only,</h6><br>
+        <h6 class="card-title">if you signed-up!</h6>
+      </div>
+      <!-- /.card-header -->
+      <!-- form start -->
+      <form class="form-horizontal">
+        <div class="card-body">
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Display Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputName3" placeholder="Nick name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">phone number</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputNum3" placeholder="Phone number without hipen(-)">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="offset-sm-2 col-sm-10">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck2">Remember me</label>
+              </div>
+            </div>
+          </div>
+          <!--                <div class="col-sm-6">-->
+          <!--                    <div class="form-group">-->
+          <!--                        <label>Choose Permission</label>-->
+          <!--                        <select class="custom-select perm">-->
+          <!--                            <option value="" selected="selected">&#45;&#45;&#45;&#45;&#45;&#45;</option>-->
+          <!--                            <option value="admin">Administrator</option>-->
+          <!--                            <option value="user">User</option>-->
+          <!--                        </select>-->
+          <!--                    </div>-->
+          <!--                </div>-->
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+          <button type="button" class="btn btn-info login">Sign in</button>
+          <button type="button" class="btn btn-info sign-up">Sign up</button>
+          <button type="button" class="btn btn-info google">With Google</button>
+          <button type="button" class="btn btn-default float-right close">Cancel</button>
+        </div>
+        <!-- /.card-footer -->
+      </form>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+<!--    <script src="../node_modules/admin-lte/plugins/jquery/jquery.js"></script>-->
+    <!-- Bootstrap 4 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- bs-custom-file-input -->
+    <script src="https://unpkg.com/bs-custom-file-input@1.3.4/dist/bs-custom-file-input.js"></script>
+    <!-- AdminLTE App -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.0.2/js/adminlte.js"></script>
+
+    <script>
+      bsCustomFileInput.init();
+    </script>
+
+    <script src="../pages/tempLogin.js"></script>
+  </body>
+</html>
